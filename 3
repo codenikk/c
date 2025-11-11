@@ -1,0 +1,142 @@
+What is a WAN?
+
+WAN (Wide Area Network) is a network that connects multiple LANs (Local Area Networks) over a large geographical area — such as a city, country, or even worldwide.
+
+Example: The Internet is the largest WAN.
+
+It allows computers and networks in different locations to communicate.
+
+
+
+---
+
+2. How is WAN different from LAN?
+
+Feature	LAN (Local Area Network)	WAN (Wide Area Network)
+
+Coverage Area	Small area (office, school, home)	Large area (city, country, world)
+Speed	High (up to Gbps)	Lower compared to LAN
+Ownership	Usually owned by one organization	Can be public or privately managed
+Devices Used	Switches, hubs	Routers, leased lines
+Cost	Low setup cost	High setup and maintenance cost
+
+
+
+---
+
+3. What devices are used to connect two LANs?
+
+To connect two or more LANs together, we use Routers or Layer 3 Switches.
+
+The router forwards data between networks using IP addresses.
+
+WAN links (like leased lines, DSL, or fiber) can connect routers at different LAN sites.
+
+
+
+---
+
+4. What is the purpose of a router in WAN?
+
+A router connects multiple LANs and directs data packets between them across a WAN.
+Functions:
+
+Determines the best path for data transfer.
+
+Routes packets between networks.
+
+Performs NAT (Network Address Translation) and firewall functions.
+
+
+
+---
+
+5. What is SSID?
+
+SSID (Service Set Identifier) is the name of a wireless network.
+
+It helps users identify and connect to the correct Wi-Fi network.
+
+Example: If you see “CollegeWiFi” in your phone, that’s the SSID.
+
+
+
+---
+
+6. How do you configure a wireless LAN in Packet Tracer?
+
+Steps:
+
+1. Place Wireless Router and PCs/Laptops on the workspace.
+
+
+2. Connect wireless devices to the router (automatically connects via Wi-Fi).
+
+
+3. Click on the Wireless Router → GUI tab → Setup.
+
+
+4. Enter Network Name (SSID) and Password.
+
+
+5. Assign IP addresses to the devices (manually or via DHCP).
+
+
+6. Test connection using the PING command.
+
+
+
+
+---
+
+7. What protocol is used for wireless communication?
+
+The main protocol family used is IEEE 802.11, which defines Wi-Fi standards such as:
+
+802.11a, 802.11b, 802.11g, 802.11n, 802.11ac
+These manage how devices communicate over wireless signals.
+
+
+
+---
+
+8. How can you check connectivity between two LANs?
+
+Use the PING command:
+
+Syntax: ping <destination IP>
+
+If replies are received → the two LANs are successfully connected through the WAN (router).
+
+If not → check routing configuration or IP settings.
+
+
+
+---
+
+9. What is a packet in networking?
+
+A packet is a small unit of data transmitted over a network.
+Each packet contains:
+
+Header (source/destination address, protocol info)
+
+Payload (actual data)
+
+Trailer (error checking information)
+
+
+
+---
+
+10. What does the Packet Tracer simulation show during transfer?
+
+In Simulation Mode, Packet Tracer visually shows:
+
+Packets moving between devices (colored envelopes).
+
+Encapsulation and decapsulation at each layer (OSI model).
+
+Protocol details (like IP, ICMP, ARP).
+
+Successful or failed delivery of packets.
