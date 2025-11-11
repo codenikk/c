@@ -1,0 +1,126 @@
+What is SSL?
+
+SSL (Secure Sockets Layer) is a security protocol that provides encrypted communication between a web browser and a web server.
+It ensures that data sent over the Internet is protected from eavesdropping and tampering.
+
+
+---
+
+🎯 2. What is the purpose of SSL in communication?
+
+The main purposes of SSL are:
+
+Encryption: Protects data from being read by unauthorized parties.
+
+Authentication: Confirms that the website is genuine (not a fake one).
+
+Data Integrity: Ensures data isn’t modified during transmission.
+
+
+
+---
+
+🔄 3. What is TLS?
+
+TLS (Transport Layer Security) is the updated and more secure version of SSL.
+It fixes vulnerabilities found in SSL and is the standard protocol used today for secure communication.
+
+> ✅ Note: Modern browsers actually use TLS, but people still say “SSL” out of habit.
+
+
+
+
+---
+
+🧾 4. How do you recognize SSL packets in Wireshark?
+
+In Wireshark, SSL/TLS packets can be identified by:
+
+The protocol column showing “TLS” or “SSL”
+
+The port number 443 (commonly used for HTTPS)
+
+Packet details showing “Client Hello”, “Server Hello”, “Certificate”, etc. — these are part of the SSL/TLS handshake.
+
+
+
+---
+
+🌐 5. What port is used for HTTPS?
+
+HTTPS (HTTP Secure) uses port 443.
+
+HTTP (non-secure) uses port 80.
+
+
+
+---
+
+🤝 6. What happens during the SSL handshake?
+
+The SSL handshake is the process where the client and server establish a secure connection.
+Steps:
+
+1. Client Hello: The browser sends supported encryption methods.
+
+
+2. Server Hello: The server chooses encryption and sends its digital certificate.
+
+
+3. Key Exchange: A session key is securely created.
+
+
+4. Encryption Begins: All further communication is encrypted with this key.
+
+
+
+
+---
+
+🔏 7. What is encryption?
+
+Encryption is the process of converting plain text into a coded format (cipher text) using a key.
+Only someone with the correct decryption key can read the original data.
+
+
+---
+
+💳 8. Why is SSL important for online banking or e-commerce?
+
+SSL is critical because it:
+
+Protects sensitive data like passwords, credit card numbers, and personal info.
+
+Prevents hackers from intercepting or altering data.
+
+Builds trust by ensuring the website is legitimate and secure.
+
+
+
+---
+
+🧠 9. What are digital certificates?
+
+A digital certificate is an electronic document issued by a Certificate Authority (CA) that verifies a website’s identity.
+It contains:
+
+Website’s public key
+
+Owner information
+
+The CA’s digital signature
+This helps users confirm they’re communicating with the real website.
+
+
+
+---
+
+✅ 10. How do you identify a secure website?
+
+You can recognize a secure website by:
+
+URL starting with “https://” (not just “http://”)
+
+A padlock icon 🔒 in the browser address bar
+
+Viewing the SSL certificate details (click the padlock to see the certificate and issuer)
