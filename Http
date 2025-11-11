@@ -1,0 +1,188 @@
+1. What is HTTP?
+
+HTTP (HyperText Transfer Protocol) is a communication protocol used for transferring web pages and other content over the internet.
+
+It defines how messages are formatted and transmitted between a client (like a web browser) and a web server.
+
+Example: When you type http://example.com, your browser sends an HTTP request to the server to fetch the webpage.
+
+
+
+---
+
+2. What is HTTPS?
+
+HTTPS (HyperText Transfer Protocol Secure) is the secure version of HTTP.
+
+It encrypts the data exchanged between the browser and the server using SSL/TLS to protect against eavesdropping or tampering.
+
+Example: https://www.google.com — all communication between you and Google’s servers is encrypted.
+
+
+
+---
+
+3. What is FTP used for?
+
+FTP (File Transfer Protocol) is used to transfer files between computers over a network.
+
+Common uses:
+
+Uploading files to a web server.
+
+Downloading files from a remote server.
+
+
+It works in client-server mode: one computer runs an FTP client, and another runs an FTP server.
+
+
+
+---
+
+4. What port numbers do HTTP, HTTPS, and FTP use?
+
+Protocol	Default Port Number	Description
+
+HTTP	80	Standard web traffic
+HTTPS	443	Secure web traffic using SSL/TLS
+FTP	21 (control), 20 (data)	Used for file transfer (control and data connections)
+
+
+
+---
+
+5. What is the main difference between HTTP and HTTPS?
+
+Feature	HTTP	HTTPS
+
+Security	Not secure (data sent as plain text)	Secure (data encrypted using SSL/TLS)
+Port	80	443
+URL Prefix	http://	https://
+Use Case	Non-sensitive data	Sensitive or private data (e.g., banking, login pages)
+
+
+
+---
+
+6. What protocol provides security to HTTPS?
+
+HTTPS uses SSL (Secure Sockets Layer) or its newer version TLS (Transport Layer Security) to provide encryption, authentication, and data integrity.
+
+
+---
+
+7. What is SSL/TLS?
+
+SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols that:
+
+Encrypt data between client and server.
+
+Authenticate the server (and sometimes the client).
+
+Ensure integrity, preventing data from being modified in transit.
+
+
+> ⚙️ TLS is the modern, more secure successor to SSL.
+
+
+
+
+---
+
+8. How do you simulate these protocols in Packet Tracer?
+
+In Cisco Packet Tracer, you can simulate these as follows:
+
+For HTTP/HTTPS
+
+1. Add a Web Server and a PC to the workspace.
+
+
+2. Connect them with appropriate cables and assign IP addresses.
+
+
+3. On the server, enable HTTP and/or HTTPS services from the Services tab.
+
+
+4. On the PC, open the Web Browser and type:
+
+http://[server IP] for HTTP
+
+https://[server IP] for HTTPS
+
+
+
+5. Observe the packets in Simulation Mode to view protocol details.
+
+
+
+For FTP
+
+1. Add an FTP Server and a PC.
+
+
+2. On the server, enable the FTP service and create a user account.
+
+
+3. On the PC, open the Command Prompt and type:
+
+ftp [server IP]
+
+
+4. Enter username and password, then use commands like:
+
+dir    (to list files)
+get    (to download)
+put    (to upload)
+
+
+5. Observe the FTP packets in Simulation Mode.
+
+
+
+
+---
+
+9. How can you test file transfer using FTP?
+
+In Packet Tracer:
+
+1. Enable FTP service on the server.
+
+
+2. Connect a PC to the same network.
+
+
+3. Use the PC’s Command Prompt → ftp command.
+
+
+4. After logging in, use:
+
+put filename → Upload a file
+
+get filename → Download a file
+
+
+
+5. Watch the event list or simulation window to confirm file transfer.
+
+
+
+
+---
+
+10. What information can be seen in the packet details?
+
+In Simulation Mode, when you click on a packet:
+
+Source and Destination IP/MAC addresses
+
+Protocol used (HTTP, HTTPS, FTP, TCP, etc.)
+
+Port numbers (e.g., 80, 443, 21, 20)
+
+TCP flags (SYN, ACK, etc.)
+
+Encapsulation details (Ethernet, IP, TCP/UDP, Application layer)
+
+Payload data (if visible)
