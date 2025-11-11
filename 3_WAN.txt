@@ -1,0 +1,13 @@
+enable
+conf t
+hostname r1
+do show ip interface brief
+interface g0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+ip dhcp pool modern
+network 192.168.1.0 255.255.255.0
+default-router 192.168.1.1
+network 192.168.1.0 255.255.255.0
+exit
+exit
