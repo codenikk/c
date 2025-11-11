@@ -1,0 +1,122 @@
+What is DHCP?
+
+DHCP (Dynamic Host Configuration Protocol) is a network management protocol used to automatically assign IP addresses and other network configuration parameters (like subnet mask, gateway, DNS server) to devices on a network.
+This eliminates the need for manually assigning IP addresses to each device.
+
+
+---
+
+2. What is the function of a DHCP server?
+
+A DHCP server automatically provides:
+
+IP Address to clients
+
+Subnet Mask
+
+Default Gateway
+
+DNS Server Address
+It ensures that each device receives a unique IP address and manages IP address allocation efficiently.
+
+
+
+---
+
+3. What are the advantages of DHCP?
+
+✅ Automatic IP assignment – Reduces manual configuration errors
+✅ Prevents IP conflicts – Ensures unique IPs
+✅ Easy management – Useful in large networks
+✅ Centralized control – Configuration changes made once on the server apply to all clients
+✅ Efficient reuse of IPs – IPs are released and reassigned when devices disconnect/reconnect
+
+
+---
+
+4. What is the difference between static and dynamic IP assignment?
+
+Feature	Static IP	Dynamic IP
+
+Assignment	Manually configured	Automatically assigned by DHCP
+Changeability	Fixed	Can change after lease expires
+Configuration effort	High	Low
+Usage	Servers, printers	PCs, phones, general clients
+
+
+
+---
+
+5. What is a DHCP lease?
+
+A DHCP lease is the time period for which an IP address is assigned to a device.
+When the lease expires, the client must renew it to continue using the same IP, or it may receive a new one.
+
+
+---
+
+6. What are the main steps of the DHCP process (DORA)?
+
+DORA stands for:
+
+1. Discover – Client broadcasts a request for an IP.
+
+
+2. Offer – DHCP server replies with an available IP address.
+
+
+3. Request – Client requests to use the offered IP.
+
+
+4. Acknowledge – Server confirms and assigns the IP officially.
+
+
+
+
+---
+
+7. How do you configure a DHCP server in Packet Tracer?
+
+Steps:
+
+1. Add a Server and open its Config tab.
+
+
+2. Turn DHCP ON.
+
+
+3. Set Pool Name, Default Gateway, DNS Server, Starting IP Address, and Subnet Mask.
+
+
+4. Apply settings and connect clients (PCs) to the same network.
+
+
+5. On client PCs → Desktop → IP Configuration → Select “DHCP”.
+
+
+
+
+---
+
+8. How do clients obtain IP addresses automatically?
+
+When a device is set to DHCP mode, it broadcasts a DHCP Discover message.
+The DHCP server responds, and after the DORA process, the client automatically receives its IP configuration.
+
+
+---
+
+9. What command is used to check assigned IP?
+
+In Windows:
+
+ipconfig
+
+In Cisco devices (Packet Tracer CLI):
+
+show ip interface brief
+
+
+or
+
+show ip address
